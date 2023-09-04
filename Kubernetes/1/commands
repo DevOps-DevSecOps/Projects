@@ -1,0 +1,19 @@
+$ docker build . -t [username]/jenkinsdockerfile
+
+$ docker push -t [username]/[image name]
+
+$ minikube start
+
+$ kubectl create namespace jenkins
+
+$ kubectl apply -f jenkins.yaml -n jenkins jenkins.yaml
+
+$ kubectl get pods -n jenkins
+
+$ minikube ip
+
+$ kubectl get services -n jenkins
+
+$ kubectl get pods -n Jenkins
+
+$ kubectl logs [podname] -n jenkins
